@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>计算器</title>
+	<script>
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+	
+}
+</script>
+	<style type="text/css">
+		button,#ab{
+			
+			width:100%;
+			height:100%;
+			border-color: azure;
+			font-size: 40px;
+			color: blue;	
+		}
+		button:hover{
+			border-color: ;
+			color:blue;
+		  background-color: aquamarine;
+			
+		}
+		input{
+			text-align: right;
+			font-family: 微软雅黑;
+		}
+		input{ 
+		background-color:aquamarine;
+		border:none;
+		}
+	</style>
+</head>
+<body background="85-1P113093513.jpg">
+	<center >
+		<table width="40%" border="1" height="180"  >
+			<tr>
+		<td background="chuyin.jpg" align="center"><font color="blue" size="7" face="华文宋体" >勉强能用的计算器</font></table></td></tr>
+	<table border="1" width="40%" height="450" bgcolor="blue">
+		
+		<tr>
+			<td colspan="4"><input type="text" id="ab" readonly="true" style="height: 100%;width: 99%;"></td>
+		</tr>
+		<tr>
+			<td colspan="2" onclick="qingkon();"><button >c</button></td>
+			<td colspan="2"onclick="sc();"><button>←</button></td>
+		</tr>
+		<script type="text/javascript">
+		var num1="";
+		var num2="";
+		var fuhao="";
+		function shuzhi(temp1){
+			num1=num1+temp1;
+			xiangshi(num1);	
+		}
+		function xiangshi(temp2){
+		document.getElementById("ab").value=temp2;
+		}	
+		function ys(temp3){
+			fuhao=temp3;
+			xiangshi(fuhao);
+			num2=num1;
+			num1="";
+		}
+		function denhao(temp4){
+			var jieguo="";	
+			if(fuhao=="+"){
+				jieguo=num2*1+num1*1;
+				xiangshi(jieguo);
+				num1=jieguo;
+
+			}else if(fuhao=="-"){
+                jieguo=num2*1-num1*1;
+                xiangshi(jieguo);
+                num1=jieguo;
+			}else if(fuhao=="×"){
+				jieguo=num2*1*num1*1;
+				xiangshi(jieguo);
+				num1=jieguo;
+
+			}else{
+				if(num1==0){
+					xiangshi("这样不对");
+				}
+			else{
+				jieguo=num2*1/num1*1;
+				xiangshi(jieguo);
+				num1=jieguo;
+
+			}
+
+          } 
+
+		}
+		function qingkon(){
+			num1="";
+			num2="";
+			yunsuanfu="";
+			jieguo="";
+			xiangshi("0");
+
+
+		}
+		function dian(temp5){
+		if((num1=num1*1+temp5)*1||num1==0){
+			xiangshi(num1)
+
+		}
+			
+
+		}
+		function sc(){
+			num1=num1.substring(0,num1.length-1);
+			xiangshi(num1);
+		}
+		
+
+		
+
+			
+		</script>
+		<tr>
+			<td><button onclick="shuzhi(this.innerHTML);">7</button></td>
+			<td><button onclick="shuzhi(this.innerHTML);">8</button></td>
+			<td><button onclick="shuzhi(this.innerHTML);">9</button></td>
+			<td><button onclick="ys(this.innerHTML);">÷</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="shuzhi(this.innerHTML);">4</button></td>
+			<td><button onclick="shuzhi(this.innerHTML);">5</button></td>
+			<td><button onclick="shuzhi(this.innerHTML);">6</button></td>
+			<td><button onclick="ys(this.innerHTML);">×</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="shuzhi(this.innerHTML);">1</button></td>
+			<td><button onclick="shuzhi(this.innerHTML);">2</button></td>
+			<td><button onclick="shuzhi(this.innerHTML);">3</button></td>
+			<td><button onclick="ys(this.innerHTML);">-</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="dian(this.innerHTML);">.</button></td>
+			<td><button onclick="shuzhi(this.innerHTML);">0</button></td>
+			<td><button onclick="denhao(this.innerHTML);">=</button></td>
+			<td><button onclick="ys(this.innerHTML);">+</button></td>
+		</tr>
+	</table>
+	<h1><button onclick="getElementById('demo').innerHTML=Date()" ID="demo">现在的时间是</h1>
+	
+</body>
+</html>
