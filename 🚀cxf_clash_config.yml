@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2023-04-22 10:33:34
+#  创建时间：2023-04-22 10:46:00
 #  模版：v2rayse默认模版
-#  节点数量：4
+#  节点数量：5
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -17,6 +17,7 @@ proxies:
   - {"type":"trojan","name":"🇭🇰香港05|专线","server":"hk5.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou","port":443,"password":"231f9b41-bf10-47c4-b160-1f8b6300431a","udp":true,"skip-cert-verify":true,"sni":"13-251-128-188.nhost.00cdn.com","network":"tcp"}
   - {"type":"trojan","name":"🇸🇬新加坡04|专线","server":"sg4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou","port":443,"password":"231f9b41-bf10-47c4-b160-1f8b6300431a","udp":true,"skip-cert-verify":true,"sni":"13-251-128-188.nhost.00cdn.com","network":"tcp"}
   - {"type":"trojan","name":"🇸🇬新加坡07|专线","server":"sg7.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou","port":443,"password":"231f9b41-bf10-47c4-b160-1f8b6300431a","udp":true,"skip-cert-verify":true,"sni":"13-251-128-188.nhost.00cdn.com","network":"tcp"}
+  - {"type":"trojan","name":"default_Trojan_gRPC","server":"cxf.sz-jhsee.com","port":7022,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","udp":true,"skip-cert-verify":true,"sni":"cxf.sz-jhsee.com","network":"grpc"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -27,6 +28,7 @@ proxy-groups:
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
       - 🇸🇬新加坡07|专线
+      - default_Trojan_gRPC
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -37,6 +39,7 @@ proxy-groups:
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
       - 🇸🇬新加坡07|专线
+      - default_Trojan_gRPC
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -47,6 +50,7 @@ proxy-groups:
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
       - 🇸🇬新加坡07|专线
+      - default_Trojan_gRPC
   - name: 📲 电报信息
     type: select
     proxies:
@@ -56,6 +60,7 @@ proxy-groups:
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
       - 🇸🇬新加坡07|专线
+      - default_Trojan_gRPC
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -65,6 +70,7 @@ proxy-groups:
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
       - 🇸🇬新加坡07|专线
+      - default_Trojan_gRPC
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -74,6 +80,7 @@ proxy-groups:
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
       - 🇸🇬新加坡07|专线
+      - default_Trojan_gRPC
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,6 +107,7 @@ proxy-groups:
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
       - 🇸🇬新加坡07|专线
+      - default_Trojan_gRPC
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
