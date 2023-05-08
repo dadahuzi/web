@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-22 16:04:25
+# 创建时间：2023-05-08 10:55:10
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：11
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,60 +21,116 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"default_Trojan_TCP_Trojan","type":"trojan","server":"cxf.sz-jhsee.com","port":7022,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"de1","type":"trojan","server":"cxf.sz-jhsee.com","port":7020,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选1","type":"trojan","server":"cxf.sz-jhsee.com","port":7021,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选2","type":"trojan","server":"cxf.sz-jhsee.com","port":7023,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选3","type":"trojan","server":"cxf.sz-jhsee.com","port":7024,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选4","type":"trojan","server":"cxf.sz-jhsee.com","port":7025,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选5","type":"trojan","server":"cxf.sz-jhsee.com","port":7026,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选6","type":"trojan","server":"cxf.sz-jhsee.com","port":7027,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇭🇰香港05|专线","type":"trojan","server":"hk5.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou","port":443,"udp":true,"password":"231f9b41-bf10-47c4-b160-1f8b6300431a","sni":"13-251-128-188.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇸🇬新加坡04|专线","type":"trojan","server":"sg4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou","port":443,"udp":true,"password":"231f9b41-bf10-47c4-b160-1f8b6300431a","sni":"13-251-128-188.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵日本 04 | 专线","type":"trojan","server":"jp4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou","port":443,"udp":true,"password":"231f9b41-bf10-47c4-b160-1f8b6300431a","sni":"13-251-128-188.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸美国 08 | 专线","type":"trojan","server":"us8.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou","port":443,"udp":true,"password":"231f9b41-bf10-47c4-b160-1f8b6300431a","sni":"13-251-128-188.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - default_Trojan_TCP_Trojan
+      - de1
+      - 备选1
+      - 备选2
+      - 备选3
+      - 备选4
+      - 备选5
+      - 备选6
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
+      - 🇯🇵日本 04 | 专线
+      - 🇺🇸美国 08 | 专线
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - default_Trojan_TCP_Trojan
+      - de1
+      - 备选1
+      - 备选2
+      - 备选3
+      - 备选4
+      - 备选5
+      - 备选6
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
+      - 🇯🇵日本 04 | 专线
+      - 🇺🇸美国 08 | 专线
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - default_Trojan_TCP_Trojan
+      - de1
+      - 备选1
+      - 备选2
+      - 备选3
+      - 备选4
+      - 备选5
+      - 备选6
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
+      - 🇯🇵日本 04 | 专线
+      - 🇺🇸美国 08 | 专线
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - default_Trojan_TCP_Trojan
+      - de1
+      - 备选1
+      - 备选2
+      - 备选3
+      - 备选4
+      - 备选5
+      - 备选6
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
+      - 🇯🇵日本 04 | 专线
+      - 🇺🇸美国 08 | 专线
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - default_Trojan_TCP_Trojan
+      - de1
+      - 备选1
+      - 备选2
+      - 备选3
+      - 备选4
+      - 备选5
+      - 备选6
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
+      - 🇯🇵日本 04 | 专线
+      - 🇺🇸美国 08 | 专线
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - default_Trojan_TCP_Trojan
+      - de1
+      - 备选1
+      - 备选2
+      - 备选3
+      - 备选4
+      - 备选5
+      - 备选6
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
+      - 🇯🇵日本 04 | 专线
+      - 🇺🇸美国 08 | 专线
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -97,9 +153,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - default_Trojan_TCP_Trojan
+      - de1
+      - 备选1
+      - 备选2
+      - 备选3
+      - 备选4
+      - 备选5
+      - 备选6
       - 🇭🇰香港05|专线
       - 🇸🇬新加坡04|专线
+      - 🇯🇵日本 04 | 专线
+      - 🇺🇸美国 08 | 专线
 
 rules:
 # 本地/局域网地址
