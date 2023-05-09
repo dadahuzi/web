@@ -1,8 +1,8 @@
 ####################################
-# 创建者：v2rayse.com
-# 客户端：Clash
+# 创建者：xxxxxxx
+# 客户端：xxx
 # 创建时间：2023-05-08 10:55:10
-# 使用模版：V2RaySE 默认模版
+# 使用模版：xxxxx
 # 节点数量：11
 ####################################
 mixed-port: 7890
@@ -21,13 +21,13 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"de1","type":"trojan","server":"cxf.sz-jhsee.com","port":7020,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"备选1","type":"trojan","server":"cxf.sz-jhsee.com","port":7021,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"备选2","type":"trojan","server":"cxf.sz-jhsee.com","port":7023,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"备选3","type":"trojan","server":"cxf.sz-jhsee.com","port":7024,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"备选4","type":"trojan","server":"cxf.sz-jhsee.com","port":7025,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"备选5","type":"trojan","server":"cxf.sz-jhsee.com","port":7026,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"备选6","type":"trojan","server":"cxf.sz-jhsee.com","port":7027,"udp":true,"password":"b9fcb525-f308-4e21-a8a6-08bc40cdbba0","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"de1","type":"trojan","server":"cxf.sz-jhsee.com","port":7020,"udp":true,"password":"8ff9becd-f3e0-47c8-a4d6-fd0896a30cf2","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选1","type":"trojan","server":"cxf.sz-jhsee.com","port":7021,"udp":true,"password":"8ff9becd-f3e0-47c8-a4d6-fd0896a30cf2","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选2","type":"trojan","server":"cxf.sz-jhsee.com","port":7023,"udp":true,"password":"8ff9becd-f3e0-47c8-a4d6-fd0896a30cf2","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选3","type":"trojan","server":"cxf.sz-jhsee.com","port":7024,"udp":true,"password":"8ff9becd-f3e0-47c8-a4d6-fd0896a30cf2","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选4","type":"trojan","server":"cxf.sz-jhsee.com","port":7025,"udp":true,"password":"8ff9becd-f3e0-47c8-a4d6-fd0896a30cf2","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选5","type":"trojan","server":"cxf.sz-jhsee.com","port":7026,"udp":true,"password":"8ff9becd-f3e0-47c8-a4d6-fd0896a30cf2","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"备选6","type":"trojan","server":"cxf.sz-jhsee.com","port":7027,"udp":true,"password":"8ff9becd-f3e0-47c8-a4d6-fd0896a30cf2","sni":"cxf.sz-jhsee.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇭🇰香港05|专线","type":"trojan","server":"hk5.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou","port":443,"udp":true,"password":"231f9b41-bf10-47c4-b160-1f8b6300431a","sni":"13-251-128-188.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇸🇬新加坡04|专线","type":"trojan","server":"sg4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou","port":443,"udp":true,"password":"231f9b41-bf10-47c4-b160-1f8b6300431a","sni":"13-251-128-188.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇯🇵日本 04 | 专线","type":"trojan","server":"jp4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou","port":443,"udp":true,"password":"231f9b41-bf10-47c4-b160-1f8b6300431a","sni":"13-251-128-188.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
